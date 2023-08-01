@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    
+        font-family: 'Anton', sans-serif !important;
+   
+    letter-spacing: 0.03em;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-6{
+    flex-basis: 0 0 50%;
+    max-width: 50%;
+}
+.col-8{
+    flex-basis: 0 0 65%;
+    max-width: 65%;
+}
+.col-4{
+    flex-basis: 0 0 35%;
+    max-width: 35%;
+}
+.col-12 {
+    flex-basis: 0 0 100%;
+    max-width: 100%;
+}
+.col-3 {
+    flex-basis: 0 0 25%;
+    max-width: 25%;
+}
+:root{
+    --colors-gradientCardHeader: #183317;
+    --colors-background: #0000003c;
+    --colors-cardBorder: #06ff00;
+    --colors-backgroundAlt: #000000;
+    --colors-primary: #06ff00;
+    --colors-secondary: #06ff00;
+    --colors-inputSecondary: #06ff008c;
+    --colors-failure: #06ff00;
+    --colors-backgroundDisabled: #1fe11b;
+    --colors-text99: #00000099;
+    --shadows-focus:unset;
+    // --colors-textSubtle: #975fff;
+    --colors-input:unset;
+}
+@media (max-width:1024px) {
+    .col-8{
+        flex-basis: 0 0 60%;
+        max-width: 60%;
+    }
+    .col-4{
+        flex-basis: 0 0 40%;
+        max-width: 40%;
+    }  
+}
+@media (max-width:768px){
+    .col-6{
+        flex-basis: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-8{
+        flex-basis: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-4{
+        flex-basis: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.herosection {
+    // background: url(../Images/2624574.jpg);
+    height:100%;
+    width: 100%;
+    z-index: 999999;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    // filter: invert(1);
+    
+
+}
+.ballwrap {
+    // width: 70px;
+    min-height: 70px;
+    padding-inline: 15px;
+}
+.items-center{
+    place-items: center;
+}
+.casinochip {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   display: none;
+//    transform: scale(0.6);
+  
+}
+.casinochip1{
+    filter:hue-rotate(45deg);
+}
+.casinochip2{
+    filter:hue-rotate(60deg);
+}
+.casinochip3{
+    filter:hue-rotate(75deg);
+}
+.casinochip4{
+    filter:hue-rotate(90deg);
+}
+.casinochip5{
+    filter:hue-rotate(120deg);
+}
+.casinochip6{
+    filter:hue-rotate(180deg);
+}
+.balls {
+    font-size: 35px !important;
+    margin-right: 5px;
+    line-height: 1.5 !important;
+}
+.tickettitle {
+    color: #000;
+}
+.tickettitle {
+    background-color: #1fe11b;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    padding: 20px;
+}
+.formticket {
+    height: 100%;
+}
+.Btn:hover{
+    opacity: 1 !important;
+}
+.toggled {
+    background-color: #06ff00 !important;
+}
+.rightdiv {
+    position: relative;
+    
+    &::before{
+        content: '';
+        position:absolute;
+        top:0;
+        right:0;
+        height:100%;
+        width:20px;
+        background:url(../Images/sDAwd.png);
+        background-repeat: repeat-y;
+        filter: invert(1);
+        background-size: 43px;
+        }
+}
+.leftdiv {
+    position: relative;
+    width: 50vw;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 20px;
+        background:url(../Images/sDAwd.png);
+        background-repeat: repeat-y;
+        z-index: 9;
+        transform: scaleX(-1);
+        filter: invert(1);
+        background-size: 43px;
+        }
+}
+.matchbox {
+    background-color: #161b16d9;
+    padding-inline: 15px;
+    border-radius: 6px;
+    padding-block: 15px;
+}
+.Btn {
+    position: relative;
+    width: 150px;
+    height: 55px;
+    border-radius: 45px;
+    border: none;
+    background-color: rgb(151, 95, 255);
+    color: white;
+    box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
+    0px 5px 10px rgba(5, 5, 5, 0.212),
+    0px -10px 10px rgb(124, 54, 255) inset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .Btn:hover {
+    animation: jello-horizontal 0.9s both;
+  }
+  .steplist {
+    display: inline-block;
+    padding: 10px;
+    background: #06ff00;
+    border-radius: 0 10px;
+    color: #000 !important;
+  }
+  
+  @keyframes jello-horizontal {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+//media start'
+@media (max-width:992px) {
+    .ballwrap {
+        // width: 70px;
+        // height: 70px;
+    }
+    .casinochip {
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+      
+    }
+}
+@media (max-width:768px) {
+  
+    .rightdiv {
+        &::before{
+            content: '';
+            display: none;
+        }
+    }
+    .leftdiv {
+        width: 100%;
+        &::before{
+            display: none;
+        }
+    }
+    .tickettitle {
+         min-height: auto;
+         text-align: center;
+         font-size: 40px;
+    }
+ 
+
+}
+@media (max-width:568px) {
+    .ballwrap {
+        max-width: 70px;
+        
+    }  
+    .balls {
+        font-size: 25px !important;
+        margin-right: 0px;
+        line-height: 2.4 !important;
+    }
+  
+}
+.bg {
+    position: absolute;
+    z-index: -1;
+    inset: -4px;
+    border-radius: 0 10px;
+    overflow: hidden;
+  }
+  
+  .uwu {
+    filter: blur(8px);
+    transition: filter 0.3s;
+  }
+  
+  .bg::before {
+    content: '';
+    position: absolute;
+    aspect-ratio: 1/1;
+    top: 50%;
+    left: 50%;
+    min-width: 150%;
+    min-height: 150%;
+    background-image: conic-gradient(
+      hsl(0, 100%, 50%),
+      hsl(30, 100%, 50%),
+      hsl(60, 100%, 50%),
+      hsl(90, 100%, 50%),
+      hsl(120, 100%, 50%),
+      hsl(150, 100%, 50%),
+      hsl(180, 100%, 50%),
+      hsl(210, 100%, 50%),
+      hsl(240, 100%, 60%),
+      hsl(270, 100%, 50%),
+      hsl(300, 100%, 50%),
+      hsl(330, 100%, 50%),
+      hsl(360, 100%, 50%)
+    );
+    // background-image: conic-gradient(
+    //   hsl(90, 100%, 50%),
+    //   hsl(120, 79%, 40%),
+    //   hsl(90, 100%, 66%),
+    //   hsl(120, 100%, 50%),
+    //   hsl(90, 100%, 50%),
+    //   hsl(120, 100%, 50%),
+    //   hsl(90, 100%, 50%),
+    //   hsl(120, 100%, 50%),
+    //   hsl(90, 100%, 50%),
+    // );
+    animation: speeen 4s linear infinite;
+    transform-origin: 0% 0%;
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  
+  @keyframes speeen {
+    from {
+      transform: rotate(0deg) translate(-50%, -50%);
+    }
+  
+    to {
+      transform: rotate(360deg) translate(-50%, -50%);
+    }
+  }
+  
